@@ -1,0 +1,118 @@
+body{
+    background-color: rgba(148, 148, 148, 0.256);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh ; 
+}
+div{
+    margin: auto;
+    height: auto;
+    width: 500px;
+    background-color: transparent;
+    border: none;
+    transition: 1s;
+    box-shadow: 3px 8px 10px 0px rgb(177, 177, 177),
+    -8px -5px 13px white;
+    border: none;
+    border-radius: 10px;
+}
+form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+#logo{
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: 285px;
+}
+#name, #email{
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(to right,#f0f0f0, #cececee5);
+    border: 0;
+    border-top: 3px solid rgba(255, 255, 255, 0.589);
+    outline: none;
+    border-radius: 15px;
+    position: relative;
+    transition: 1s ease-in-out;
+    font-size: 17px;
+}
+#name::placeholder, #email::placeholder{
+    position: absolute;
+    left: 15px;
+  }
+     
+#name:hover, #email:hover{
+    transition: 0.7s;
+    border-top: none;
+    box-shadow: 0px 5px 5px -2px #05656c75,
+    -8px -1px 50px 8px rgb(250, 250, 250);
+    background-color: rgba(208, 205, 205, 0.129);
+
+    border-top: 3px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 15px;
+
+}
+
+#buttom{
+    
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(to right,  #04b4b72a, #00bcd4);
+    border: 0;
+    border-radius: 50px;
+    margin-left: 330px;
+    margin-top: 20px;
+    
+}
+#buttom:hover{
+ 
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.422);
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px -2px rgb(177, 177, 177),
+    -8px -5px 13px white;  
+}
+
+@media (max-width: 600px){
+   div,form,#name,#email{
+    width: 350px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+    /* background-color: red; */
+   }
+   #name,#email{
+    width: 300px;
+   }
+   main{
+    margin-top: -60px;
+   }
+   div,form{
+    
+    border-radius: 50px;
+   }
+   #buttom{
+    margin-left: 200px;
+    margin-top: 25px;
+   }
+
+   
+}
